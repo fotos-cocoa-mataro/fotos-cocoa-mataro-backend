@@ -6,7 +6,7 @@ var host = process.env.HOST || '0.0.0.0';
 var port = process.env.PORT || 80;
 
 corsAnywhere.createServer({
-    originWhitelist: ['localhost', 'fotos-cocoa-mataro.github.io'],
+    originWhitelist: ['http://localhost', 'http://localhost:3000', 'https://fotos-cocoa-mataro.github.io'],
 }).listen(port, host, function () {
     console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
